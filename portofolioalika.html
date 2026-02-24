@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alika Cahya Carisa | Portfolio</title>
+    <style>
+        /* Mengatur Vibe: Dark Mode & Clean Typography */
+        :root {
+            --bg-color: #0f172a; 
+            --text-main: #f8fafc; 
+            --text-muted: #94a3b8; 
+            --accent: #0ea5e9; /* Teal/Light Blue */
+            --card-bg: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Layout Utama */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section dengan Foto Profil */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 80px 0 40px 0;
+            border-bottom: 1px solid var(--card-bg);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+            flex-shrink: 0;
+        }
+
+        .header-text h1 {
+            font-size: 3rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .header-text h1 span {
+            color: var(--accent);
+        }
+
+        .header-text p.tagline {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-top: 0;
+            font-weight: 500;
+        }
+
+        /* Responsif untuk HP (Mobile) */
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .header-text h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* Section Global */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--card-bg);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            display: inline-block;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 5px;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: flex-start;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            color: var(--accent);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 1px solid var(--accent);
+        }
+
+        /* Grid untuk Project */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border-top: 4px solid var(--accent);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            font-size: 1.3rem;
+        }
+
+        .card .role {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card p {
+            margin-bottom: 0;
+            flex-grow: 1;
+        }
+
+        /* Footer / Kontak */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #38bdf8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://drive.google.com/file/d/1WHosp6NM4qBrvY8L7twI6yn880h0lrNU/view?usp=sharing" class="profile-img">
+            
+            <div class="header-text">
+                <h1>Hi, I'm <span>Alika Cahya Carisa</span></h1>
+                <p class="tagline">Networking Engineering Student | Aspiring Data Professional | Project Manager</p>
+                <p>I am an undergraduate student at Universitas Gadjah Mada with a strong enthusiasm for data analytics, networking infrastructure, and digital innovation. I am passionate about exploring how data can solve real-world problems and building practical, technology-driven solutions.</p>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>Tech Stack & Skills</h2>
+            <p>Building a solid foundation for a future career in data and networking through hands-on projects, continuous learning, and active certifications.</p>
+            
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">R Programming</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">Microsoft Excel</span>
+                <span class="skill-tag">Project Management</span>
+                <span class="skill-tag">Cisco (CCNA/IoT)</span>
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 15px;">
+                <strong>Certifications:</strong> Google Data Analytics (R & Foundations) • IBM Intro to Data Analytics • Oracle Database Foundations • Cisco CCNA (Intro & Wireless)
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects & Experience</h2>
+            <div class="project-grid">
+                
+                <div class="card">
+                    <h3>Roblox Stock Performance Analysis</h3>
+                    <span class="role">Data Analyst Project</span>
+                    <p>Collected, cleaned, and analyzed historical time-series stock data using Excel. Designed an interactive dashboard in <strong>Power BI</strong> to visualize daily closing price trends, highlight rebound periods, and communicate key performance metrics.</p>
+                </div>
+
+                <div class="card">
+                    <h3>AquaSense: IoT Water Monitoring</h3>
+                    <span class="role">Project Manager & Network Designer</span>
+                    <p>Led the end-to-end development of a real-time water quality monitoring system simulated via Cisco Packet Tracer. Designed the IoT architecture and coordinated a multidisciplinary team to align the project with SDG 6 (Clean Water).</p>
+                </div>
+
+                <div class="card">
+                    <h3>PlantBase: Agricultural SDGs 15</h3>
+                    <span class="role">Project Manager</span>
+                    <p>Coordinated a student team to build a GUI-based educational app leveraging AI APIs for sustainable agriculture. Focused on user-centered design to make the technology accessible for farmers with limited digital literacy.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Wireless EV Charging Research</h3>
+                    <span class="role">Team Leader (ITB Geography Olympiad)</span>
+                    <p>Led a research team analyzing the implementation of wireless charging for electric vehicles in Indonesia to support the renewable energy transition. Managed workflow from literature review to prototype miniaturization.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cultural Festival 15 UGM</h3>
+                    <span class="role">Competition Staff / Organizer</span>
+                    <p>Designed the technical framework and evaluation rubrics for the cultural competition. Managed participant registration, concept screening, and coordinated pre-event training sessions to ensure objective and structured judging.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cendikia Enterprise Initiatives</h3>
+                    <span class="role">Staff of Enterprise</span>
+                    <p>Coordinated a team to execute student merchandise initiatives. Built partnerships with local MSMEs, designed official apparel, and managed end-to-end sales operations including budgeting and promotional campaigns.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <h2>Let's Connect!</h2>
+            <p>Always open to discussing data, technology, or exciting collaboration opportunities.</p>
+            <p style="font-size: 1.2rem; margin-top: 20px;">
+                <a href="mailto:alikacahyac12@gmail.com">Email Me</a> &nbsp;|&nbsp; 
+                <a href="https://www.linkedin.com/in/alikacarisa/" target="_blank">LinkedIn</a> &nbsp;|&nbsp; 
+                <a href="https://github.com/Alika1-cmd" target="_blank">GitHub</a>
+            </p>
+            <p style="margin-top: 40px; font-size: 0.9rem;">© 2026 Alika Cahya Carisa. Built with Vibe Coding.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
